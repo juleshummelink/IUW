@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navBar{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(65, 65, 255);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.5);
+}
+
+.title{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.menu{
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.menuItem{
+    font-size: 20px;
+    margin-right: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+.open{
+    position: fixed;
+    height: calc(100% - 80px);
+    top: 80px;
+    width: 50%;
+    background-color: rgb(65, 65, 255);
+}
+
+.leftOpen{
+    left: 0px;
+    animation: openLeft 0.5s forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes openLeft {
+    from{
+        left: 0%;
+    } to {
+        left: -50%;
+    }
+}
+
+@keyframes closeLeft {
+    from{
+        left: -50%;
+    } to {
+        left: 0%;
+    }
+}
+
+@keyframes openRight {
+    from{
+        right: 0%;
+    } to {
+        right: -50%;
+    }
+}
+
+@keyframes closeRight {
+    from{
+        right: -50%;
+    } to {
+        right: 0%;
+    }
+}
+
+
+.rightOpen{
+    right: 0px;
+    animation: openRight 0.5s forwards;
+    animation-iteration-count: 1;
+}
+
+.pageContent{
+    position: absolute;
+    top: 80px;
+}
