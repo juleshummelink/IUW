@@ -41,6 +41,26 @@
     margin-left: auto;
 }
 
+.mobileMenu{
+    position: fixed;
+    top: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(65, 65, 255);
+    max-height: 0px;
+    transition: max-height 0.5s;
+}
+
+.mobileMenuItem{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 750px) {
     .mobileButton{
         display: none;
