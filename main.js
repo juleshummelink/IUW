@@ -16,11 +16,17 @@ function redirect(url){
 function mobileMenu(){
     if(!menuIsOpen){
         mobileButton.src = "img/close.svg";
-        mobileMenuObject.style.maxHeight = "200px";
+        mobileMenuObject.style.display = "flex";
+        setTimeout(function(){
+            mobileMenuObject.style.maxHeight = "200px";
+        },1);
         menuIsOpen = true;
     } else {
         mobileButton.src = "img/menu.svg";
         mobileMenuObject.style.maxHeight = "0px";
+        setTimeout(function(){
+            mobileMenuObject.style.display = "none";
+        },500);
         menuIsOpen = false;
     }
 }
