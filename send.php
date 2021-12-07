@@ -14,7 +14,7 @@ fclose($file);
 // Send email
 $headers = "From: team09@inkumail.com";
 $emailBody = "Dear " . $name . "\nYou have requested information about the following message:\n" . $message . "\n\nWe will contact you soon on " . $email;
-mail($email,"Thankyou for contacting us!",$emailBody,$headers) or die "Failed to send email...";
+mail($email,"Thankyou for contacting us!",$emailBody,$headers) or die ("Failed to send email...");
 
 // Return a message for the user
 echo "Dear " . $name . ". We have received your message! We will contact you soon at " . $email;
