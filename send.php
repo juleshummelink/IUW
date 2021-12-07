@@ -6,7 +6,7 @@ $message = $_POST['message'];
 
 // Create the file 
 $filename = $name . ".txt";
-$file = fopen($filename, "W") or die("Unable to open file: " . $filename);
+$file = fopen($filename, "w") or die("Unable to open file: " . $filename);
 $fileContent = "Please contact:\n" . $name . " on " . $email . "\nMessage:\n" . $message;
 fwrite($file, $fileContent);
 fclose($file);
