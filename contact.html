@@ -23,13 +23,14 @@
   <div class="pageContent">
     <div class="contactContainer">
       <span class="contactTitle">Get in touch with us!</span>
+      <span class="successBox">Dear Jules Hummelink, we have received your request. We will get in touch with you on julescitronic.nexus@gmail.com</span>
       <span class="contactLabel">Your name</span>
       <input type="text" name="name" class="contactInput">
       <span class="contactLabel">Your email</span>
       <input type="email" name="email" class="contactInput">
       <span class="contactLabel">Message</span>
       <textarea name="message" class="contactInput contactArea"></textarea>
-      <button class="contactButton">Submit</button>
+      <button class="contactButton" onclick="sendMessage()">Submit</button>
     </div>
   </div>
 
@@ -40,10 +41,18 @@
     <span class="mobileMenuItem" onclick="redirect('donate.html')">Donate</span>
   </div>
 
+  <div class="loading">
+    <div class="popUp">
+      <span class="popUpTitle">Sending</span>
+      <img class="popUpLoader" src="img/Dual Ring-1s-200px.svg">
+    </div>
+  </div>
+
   <div class="leftOpen open"></div>
   <div class="rightOpen open"></div>
 </body>
 
 <script src="main.js"></script>
+<script src="contact.js"></script>
 
 </html>

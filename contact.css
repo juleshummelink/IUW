@@ -19,6 +19,15 @@
     margin-bottom: 20px;
 }
 
+.successBox{
+    background-color: rgba(0,200,0,0.3);
+    border-radius: 5px;
+    border: solid green 1px;
+    margin-bottom: 10px;
+    display: none;
+    padding: 10px;
+}
+
 .contactLabel{
     font-size: 18px;
     color: grey;
@@ -34,6 +43,10 @@
     background-color: rgba(200,200,200, 0.2);
     border-radius: 5px;
     padding: 3px;
+}
+
+.inputWrong{
+    border: solid 1px rgba(250, 0, 0,0.7);
 }
 
 .contactArea{
@@ -52,4 +65,36 @@
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.loading{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    display: none;
+    transition: opacity 0.5s;
+}
+
+.popUp{
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.popUpTitle{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popUpLoader{
+    width: 100px;
+    height: 100px;
 }
