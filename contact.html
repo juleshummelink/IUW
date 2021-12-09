@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jules, Arthur, Gijs</title>
   <link href="main.css" rel="stylesheet">
+  <link href="contact.css" rel="stylesheet">
 </head>
 <body>
   <div class="navBar">
@@ -16,10 +17,35 @@
       <span class="menuItem" onclick="redirect('contact.html')">Contact</span>
       <span class="menuItem" onclick="redirect('donate.html')">Donate</span>
     </div>
+    <img class="mobileButton" src="img/menu.svg" alt="Open Menu" onclick="mobileMenu()">
   </div>
 
   <div class="pageContent">
-    Contact
+    <div class="contactContainer">
+      <span class="contactTitle">Get in touch with us!</span>
+      <span class="successBox">Dear Jules Hummelink, we have received your request. We will get in touch with you on julescitronic.nexus@gmail.com</span>
+      <span class="contactLabel">Your name</span>
+      <input type="text" name="name" class="contactInput">
+      <span class="contactLabel">Your email</span>
+      <input type="email" name="email" class="contactInput">
+      <span class="contactLabel">Message</span>
+      <textarea name="message" class="contactInput contactArea"></textarea>
+      <button class="contactButton" onclick="sendMessage()">Submit</button>
+    </div>
+  </div>
+
+  <div class="mobileMenu">
+    <span class="mobileMenuItem" onclick="redirect('index.html')">Home</span>
+    <span class="mobileMenuItem" onclick="redirect('over.html')">About us</span>
+    <span class="mobileMenuItem" onclick="redirect('contact.html')">Contact</span>
+    <span class="mobileMenuItem" onclick="redirect('donate.html')">Donate</span>
+  </div>
+
+  <div class="loading">
+    <div class="popUp">
+      <span class="popUpTitle">Sending</span>
+      <img class="popUpLoader" src="img/Dual Ring-1s-200px.svg">
+    </div>
   </div>
 
   <div class="leftOpen open"></div>
@@ -27,5 +53,6 @@
 </body>
 
 <script src="main.js"></script>
+<script src="contact.js"></script>
 
 </html>
