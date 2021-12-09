@@ -52,6 +52,7 @@
     background-color: rgb(65, 65, 255);
     max-height: 0px;
     transition: max-height 0.5s;
+    overflow: hidden;
 }
 
 .mobileMenuItem{

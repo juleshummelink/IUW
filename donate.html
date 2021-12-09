@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jules, Arthur, Gijs</title>
   <link href="main.css" rel="stylesheet">
+  <link href="donate.css" rel="stylesheet">
 </head>
 <body>
   <div class="navBar">
@@ -20,7 +21,12 @@
   </div>
 
   <div class="pageContent">
-    Donate
+    <video id="video">
+      <source src="rick.mp4" type="video/mp4">
+    </video>
+    <span class="button">
+      Click for free money!
+    </span>
   </div>
 
   <div class="mobileMenu">
@@ -35,5 +41,13 @@
 </body>
 
 <script src="main.js"></script>
+
+<script>
+  button = document.getElementsByClassName('button')[0];
+  button.addEventListener('click', function(){
+    button.classList.add('buttonPressed');
+    document.getElementById('video').play();
+  });
+</script>
 
 </html>
