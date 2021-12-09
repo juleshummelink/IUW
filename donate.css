@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@700&display=swap');
+
+.pageContent{
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+#video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.button{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 300px;
+    z-index: 0;
+    top: calc(50% - 150px);
+    left: calc(50% - 150px);
+    background-color: red;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: scale(1) rotate(0deg);
+    transition: 0.5s;
+    font-family: 'Fuzzy Bubbles', cursive;
+}
+.buttonPressed{
+    transform: scale(0) rotate(360deg);
+}
