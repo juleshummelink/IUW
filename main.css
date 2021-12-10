@@ -16,10 +16,29 @@
 }
 
 .title{
+    margin-left: 20px;
+}
+
+h1{
     color: white;
     font-size: 30px;
     font-weight: bold;
-    margin-left: 20px;
+}
+
+h2{
+    color: grey;
+    font-size: 40px;
+}
+
+h3{
+    font-size: 25px;
+    color: grey;
+    font-weight: bold;
+}
+
+p{
+    color: grey;
+    text-align: center;
 }
 
 .menu{

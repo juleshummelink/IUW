@@ -14,9 +14,8 @@
 }
 
 .contactTitle{
-    font-size: 30px;
-    font-weight: bold;
     margin-bottom: 20px;
+    font-size: 30px;
 }
 
 .successBox{
@@ -26,6 +25,7 @@
     margin-bottom: 10px;
     display: none;
     padding: 10px;
+    text-align: left;
 }
 
 .contactLabel{
