@@ -1,0 +1,25 @@
+.pageContent{
+    width: 100%;
+    height: calc(100% - 80px);
+    background-image: url('../img/home.jpg');
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-position: center;
+}
+
+.welcomeTitle{
+    font-size: 40px;
+}
+
+.welcomeSub{
+    color: white;
+    font-size: 30px;
+}
+
+.welcomeIcon{
+    color:white;
+    margin-bottom: 10px;
+}
